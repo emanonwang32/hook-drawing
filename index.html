@@ -91,6 +91,10 @@
   .dtext{fill:#202f42;font-family:"Cambria","Times New Roman",serif;font-size:3.4px;text-anchor:middle;dominant-baseline:middle}
   .clabel{fill:#a8452f;font-family:"Cambria","Times New Roman",serif;font-size:2.25px;dominant-baseline:middle}
   #dw.deep .sketch{stroke-width:.86;stroke:#08131f}
+  @media (max-width:400px){
+    .controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .controls select.ctl{grid-column:span 2}
+  }
   @media (max-width:920px){
     .main{display:flex;flex-direction:column;gap:12px;min-width:0;align-items:stretch}
     .spacer{display:none}
