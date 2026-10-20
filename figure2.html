@@ -216,7 +216,7 @@ const DIMS = [
   { t: "v", y1: -760, y2: 0, x: -2350, exts: [[[-1690, 0], [-2500, 0]], [[-1800, -400], [-2500, -400]]], txt: "400", tx: -2520, ty: -380, rot: -90 },
   { t: "ld", p: [0, CC.TOP[1]], elbow: [-820, 2080], tail: [-1320, 2080], txt: "R1800", tx: -1400, ty: 2080, anchor: "end" },
   { t: "ld", p: [-VALS.EX - VALS.R_OUT * Math.cos(20 * D2R), VALS.R_OUT * Math.sin(20 * D2R)], elbow: [-2150, -1250], tail: [-2600, -1250], txt: "R400", tx: -2680, ty: -1250, anchor: "end" },
-  { t: "ld", p: [-VALS.EX + VALS.R_PUP * Math.cos(40 * D2R), VALS.R_PUP * Math.sin(40 * D2R)], elbow: [-1900, -1520], tail: [-2350, -1520], txt: "R200", tx: -2430, ty: -1520, anchor: "end" },
+  { t: "ld", p: [-VALS.EX - VALS.R_PUP * Math.cos(40 * D2R), -VALS.R_PUP * Math.sin(40 * D2R)], elbow: [-1900, -1800], tail: [-2350, -1800], txt: "R200", tx: -2430, ty: -1800, anchor: "end" },
   { t: "h", x1: -VALS.MOUTH_W / 2, x2: VALS.MOUTH_W / 2, y: VALS.MOUTH_Y - 620, exts: [[[-800, VALS.MOUTH_Y - 300], [-800, VALS.MOUTH_Y - 700]], [[800, VALS.MOUTH_Y - 300], [800, VALS.MOUTH_Y - 700]]], txt: "1600", tx: 0, ty: VALS.MOUTH_Y - 850 },
   { t: "ld", p: [CC.T63[0] + 40, CC.T63[1] - 60], elbow: [4000, -1500], tail: [4500, -1500], txt: "R6000", tx: 4580, ty: -1500, anchor: "start" },
   { t: "ld", p: [CC.WIDE[0] - 30, CC.WIDE[1] + 60], elbow: [4250, -3550], tail: [4750, -3550], txt: "R3000", tx: 4830, ty: -3550, anchor: "start" },
